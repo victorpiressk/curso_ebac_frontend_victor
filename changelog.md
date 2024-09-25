@@ -64,18 +64,19 @@ Configurar editor nano                   git config  --global core.editor “nan
 ## [0.0.2] - 2024-09-25
 
 ### Added
-- Comandos básicos GIT:
 
-- Descrição dos comandos                 Powershell
+## Comandos básicos Powershell GIT:
 
-Listar o conteúdo da pasta atual         ls
-Limpar o conteúdo do terminal            CTRL + L ou cls
-Navegar entre pastas                     Cd ./pasta_destino
-Criar uma nova pasta                     mkdir nome_pasta
-Criar um novo arquivo / alterar          echo "conteúdo"> destino.txt
-Remover pasta                            rm –r ./nome_pasta
-Remover arquivo                          rm –r ./arquivo.txt
-Ver o conteúdo de um arquivo             cat ./arquivo.txt
+### Descrição dos comandos                 
+
+- Listar o conteúdo da pasta atual         ls
+- Limpar o conteúdo do terminal            CTRL + L ou cls
+- Navegar entre pastas                     Cd ./pasta_destino
+- Criar uma nova pasta                     mkdir nome_pasta
+- Criar um novo arquivo / alterar          echo "conteúdo"> destino.txt
+- Remover pasta                            rm –r ./nome_pasta
+- Remover arquivo                          rm –r ./arquivo.txt
+- Ver o conteúdo de um arquivo             cat ./arquivo.txt
 
 
 ## [0.0.1] - 2024-07-14
