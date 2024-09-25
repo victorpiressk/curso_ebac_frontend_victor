@@ -12,6 +12,18 @@ Trata-se de um arquivo onde registramos todas as mudanças que aconteceram em um
 Saiba mais acessando o link 
 https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20arquivo,cada%20vers%C3%A3o%20de%20um%20projeto
 
+## [0.0.6] - 2024-09-25
+
+### Added
+
+- Padrões para nomear commits:
+
+Chore: usado para pequenas tarefas:      git commit  –m “chore: removendo arquivo.txt” 
+Fix: correções:                          git commit  –m “fix: correção no cálculo de médias” 
+Feat: inclusão de funcionalidade:        git commit  –m “feat: inclusão de função para calcular mediana” 
+Docs: atualização de documentação:       git commit  –m “atualizando o changelog.md”
+
+
 ## [0.0.5] - 2024-09-25
 
 ### Added
