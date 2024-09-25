@@ -16,7 +16,7 @@ https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20a
 
 ### Added
 
-## Padrões para nomear commits:
+### Padrões para nomear commits:
 
 - Chore: usado para pequenas tarefas: ---- git commit  –m “chore: removendo arquivo.txt” 
 - Fix: correções: ----------------------------- git commit  –m “fix: correção no cálculo de médias” 
@@ -28,7 +28,7 @@ https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20a
 
 ### Added
 
-## Salvar (Commitar) alterações GIT:
+### Salvar (Commitar) alterações GIT:
 
 - Salvar alterações --------------------- git commit -am “Descrição da alteração"
 
@@ -37,7 +37,7 @@ https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20a
 
 ### Added
 
-## Adicionar e remover arquivos GIT:
+### Adicionar e remover arquivos GIT:
 
 - Iniciar criação de repositório --------- git init
 - Verificar status ------------------------ git status
@@ -51,7 +51,7 @@ https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20a
 
 ### Added
 
-## Configurações GIT:                
+### Configurações GIT:                
 
 - Configurar nome --------------------- git config  --global user.name “Seu nome”
 - Configurar e-mail -------------------- git config  --global user.email “Seu e-mail”
@@ -62,7 +62,7 @@ https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20a
 
 ### Added
 
-## Comandos básicos Powershell GIT:             
+### Comandos básicos Powershell GIT:             
 
 - Listar o conteúdo da pasta atual ---- ls
 - Limpar o conteúdo do terminal ----- CTRL + L ou cls
