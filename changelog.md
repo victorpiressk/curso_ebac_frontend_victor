@@ -13,12 +13,26 @@ Saiba mais acessando o link
 https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20arquivo,cada%20vers%C3%A3o%20de%20um%20projeto
 
 
+
+
+
+## [0.0.3] - 2024-09-25
+
+### Added
+- Configurar o GIT:
+
+- Descrição dos comandos                 Powershell
+
+Configurar nome                          git config  --global user.name “Seu nome”
+Configurar e-mail                        git config  --global user.email “Seu e-mail”
+Configurar editor nano                   git config  --global core.editor “nano”
+
 ## [0.0.2] - 2024-09-25
 
 ### Added
 - Comandos básicos GIT:
 
-Descrição dos comandos                   Powershell
+- Descrição dos comandos                 Powershell
 
 Listar o conteúdo da pasta atual         ls
 Limpar o conteúdo do terminal            CTRL + L ou cls
