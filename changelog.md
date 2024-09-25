@@ -12,8 +12,19 @@ Trata-se de um arquivo onde registramos todas as mudanças que aconteceram em um
 Saiba mais acessando o link 
 https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20arquivo,cada%20vers%C3%A3o%20de%20um%20projeto
 
+## [0.0.4] - 2024-09-25
 
+### Added
+- Adicionar e remover arquivos no Stage:
 
+- Descrição dos comandos                 Powershell
+
+Iniciar criação de repositório           git init
+Verificar status                         git satus
+Adicionar arquivos                       git add nome_do_arquivo
+Remover arquivos                         git rm --cached nome_do_arquivo
+Adicionar todos arquivos                 git add
+Criar um Commit                          git commit -m “Descrição do arquivo"
 
 
 ## [0.0.3] - 2024-09-25
@@ -26,6 +37,7 @@ https://keepachangelog.com/pt-BR/1.0.0/#:~:text=Um%20changelog%20%C3%A9%20um%20a
 Configurar nome                          git config  --global user.name “Seu nome”
 Configurar e-mail                        git config  --global user.email “Seu e-mail”
 Configurar editor nano                   git config  --global core.editor “nano”
+
 
 ## [0.0.2] - 2024-09-25
 
@@ -42,6 +54,7 @@ Criar um novo arquivo / alterar          echo "conteúdo"> destino.txt
 Remover pasta                            rm –r ./nome_pasta
 Remover arquivo                          rm –r ./arquivo.txt
 Ver o conteúdo de um arquivo             cat ./arquivo.txt
+
 
 ## [0.0.1] - 2024-07-14
 
