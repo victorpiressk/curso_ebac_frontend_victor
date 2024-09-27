@@ -5,17 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
-<header>
-    <h1>Formulário</h1>
-    <a href="./home.html">Home</a>
-    <a href="./container.html">Container</a>
-    <a href="./lista.html">Lista</a>
-    <a href="./tabela.html">Tabela</a>
-    <a href="./forms.html">Formulário</a>
-    <a href="./midia.html">Mídia</a>
-</header>
-<hr />
 <body>
-    
+    <header>
+        <h1>Formulário</h1>
+        <a href="./home.html">Home</a>
+        <a href="./container.html">Container</a>
+        <a href="./lista.html">Lista</a>
+        <a href="./tabela.html">Tabela</a>
+        <a href="./forms.html">Formulário</a>
+        <a href="./midia.html">Mídia</a>
+    </header>
+    <hr />
+    <main>
+        <section>
+            <h2>Formulário 1</h2>
+            <article>
+                <form>
+                    <blockquote>Formulário Processo Seletivo</blockquote>
+                    <input type="text" placeholder="Nome" /> <br />
+                    <input type="email" placeholder="e-mail" /> <br />
+                    <input type="tel" placeholder="Telefone" /> <br />
+                    <input type="number" max="60" min="12" placeholder="Idade" /> <br />
+                    <input type="color"> <label>Cor favorita</label>
+                    <p>
+                        Gênero
+                    </p>
+                    <input type="radio" name="Gênero" id="Masculino" /> <label for="Masculino">Masculino </label> <br /> 
+                    <input type="radio" name="Gênero" id="Feminino" /> <label for="Feminino">Feminino </label> <br />
+                    <input type="radio" name="Gênero" id="Outro" /> <label for="Outro">Outro </label> <br /> <br />
+                    <label>Cargo Atual</label> <br />
+                    <select>
+                        <option>Junior</option>
+                        <option>Senior</option>
+                        <option>Pleno</option>
+                        <option>Master</option>
+                    </select>
+                    <br /> <br /> <label>Insira seu curriculo</label> <br /> <input type="file">
+                    <br /> <br /> <label for="obs">Observações</label> <br /> <textarea name="" id="obs"></textarea>
+                    <br /> <input type="checkbox" id="checkbox-termos" /> <label for="checkbox-termos">Aceite de termos</label> <br />
+                    <button type="submit">
+                        Enviar
+                    </button>
+                    <button type="reset">
+                        Limpar
+                    </button>
+                </form>
+            </article>
+        </section>
+        <section>
+            <h2>Formulário 2</h2>
+            <article>
+                <form>
+                    <blockquote>Portal do Usuário</blockquote>
+                    <label for="user">Usuário: </label> <input type="text" id="user" /> <br />
+                    <label for="Senha">Senha: </label> <input type="password" id="Senha" /> <br />
+                    <br /> <button type="submit">
+                        Entrar
+                    </button>
+                    
+                </form>
+            </article>
+        </section>
+    </main>
+    <hr />
+    <footer>
+
+    </footer>
 </body>
 </html>
