@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    color: azure;
+}
+
+#sports {
+    background-color: rgba(0, 100, 0, 10%);
+}
+
+#sports h2 {
+    color: green;
+}
+
+#economy {
+    background-color: rgba(250, 246, 5, 0.1);
+}
+
+#economy h2 {
+    color: rgb(185, 158, 0);
+}
+
+#entretenimento {
+    background-color: rgba(148, 60, 148, 0.1);
+}
+
+#entretenimento h2 {
+    color: blueviolet ;
+}
+
+#tecnology {
+    background-color: rgba(80, 78, 202, 0.1);
+}
+
+#tecnology h2 {
+    color: rgb(71, 71, 199);
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article article {
+    width: 30%;
+}
+
+.article article img {
+    height: 180px;
+    position: relative;
+}
