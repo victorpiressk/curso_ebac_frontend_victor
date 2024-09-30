@@ -95,12 +95,17 @@ section h3 {
 }
 
 .store-logo {
-    margin-right: 3px;
     width: 540px;
 }
 
 #about {
+    padding-top: 0;
+}
+
+.article {
     padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #contact .container {
@@ -114,7 +119,7 @@ section h3 {
     display: flex;
     justify-content: space-between;
     padding-left: 150px;
-    padding-right: 150px;
+    padding-right: 100px;
 
 }
 
@@ -179,10 +184,10 @@ input:focus, textarea:focus {
 }
 
 #logs .container {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 160px;
     padding-right: 160px;
-    padding-bottom: 320px;
+    padding-bottom: 280px;
 }
 
 footer {
