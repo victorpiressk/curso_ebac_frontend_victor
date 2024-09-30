@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+form input,
+form button {
+    display: block;
+    width: 640px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+label, input {
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
