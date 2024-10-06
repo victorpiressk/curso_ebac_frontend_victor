@@ -50,10 +50,10 @@ button:hover {
 }
 
 #corpo-lista {
-    font-size: 10px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    font-size: 12px;
+    padding-left: 200px;
+    padding-right: 200px;
+    cursor: pointer;
 }
 
 li.completed {
