@@ -43,10 +43,11 @@ button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    background-color: #93ff89;
 }
 
 button:hover {
-    background-color: #fff;
+    background-color: rgb(207, 250, 205);
 }
 
 #corpo-lista {
