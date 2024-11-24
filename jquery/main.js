@@ -10,6 +10,8 @@ $(document).ready(function() {
         }
 
         $('#corpo-lista').on('click', 'li', function() {
+            const tarefa = []
+            
             $('li').toggleClass('completed');
         });
     });
