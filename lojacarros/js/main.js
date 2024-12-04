@@ -29,7 +29,9 @@ $(document).ready(function() {
             }
         },
         submitHandler: function(form) {
-            console.log(form)
+            alert(`Sua solicitação foi enviada com sucesso!`);
+            
+            $('.form-campo').val('');
         },
         invalidHandler: function(evento, validador) {
             let camposIncorretos = validador.numberOfInvalids();
