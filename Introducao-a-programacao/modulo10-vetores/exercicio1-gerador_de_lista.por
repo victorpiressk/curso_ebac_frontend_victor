@@ -14,9 +14,15 @@ programa {
       enquanto ((confirma == 's')ou(confirma == 'S')) {
         escreva("\nDigite o nome: ")
         leia(nomeLista[contador])
-        contador++
         escreva("Deseja dicionar nome a lista? (S) ou (N): ")
         leia(confirma)
+        contador++
+        se (contador == quantidadeVetor) {
+          para (inteiro i = 0; i < quantidadeVetor; i++){
+            escreva("\n", i,"- Nome: ", nomeLista[i])
+          }
+          pare
+        }
       }
       se ((confirma == 'n')ou(confirma == 'N')) {
         para (inteiro i = 0; i < quantidadeVetor; i++){
@@ -24,27 +30,5 @@ programa {
         }
       }
     }
-    senao {
-      para (inteiro i = 0; i < quantidadeVetor; i++){
-          escreva("\n", i,"- Nome: ", nomeLista[i])
-        }
-    }
-      
-
-    
-
-    // para (inteiro i = 0; i < quantidadeVetor; i++) {
-    //   enquanto ((confirma == 's')ou(confirma == 'S')) {
-    //     escreva("\nDigite o nome: ")
-    //     leia(nomeLista[i])
-    //     escreva("Deseja dicionar nome a lista? (S) ou (N): ")
-    //     leia(confirma)
-    //   }
-    //   se ((confirma == 'n')ou(confirma == 'N')) {
-    //     escreva("\n", i,"- Nome: ", nomeLista[i])
-    //   }
-    // }
-    
-    
   }
 }
