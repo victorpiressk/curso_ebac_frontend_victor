@@ -1,0 +1,7 @@
+.container {
+    max-width: 600px;
+}
+
+main, footer {
+    text-align: center;
+}
