@@ -15,3 +15,9 @@
 - Tipo 2: Visualizar logs de forma resumida -> git log --oneline
 - Tipo 3: Visualizar logs e conteúdo alterado -> git log --stat
 - Tipo 4: Unir tipos de visualização de logs -> git log -n 3 --oneline
+
+## Visualizar histórico de logs no VS
+
+- Passo 1: Pesquisar e baixar extenção no VS -> git history
+- Passo 2: Aperte F1
+- Passo 3: Pesquise -> git view history (git log)
