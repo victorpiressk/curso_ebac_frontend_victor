@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 - Tabelas</title>
+</head>
+<body>
+    <!-- a tag table é o container para criar uma tabela -->
+    <table>
+        <!-- A tag caption serve para adicionar um título a tabela -->
+        <caption>Notas em matemática</caption>
+        <!-- a tag thead serve para criar o cabeçalho da tabela -->
+        <thead>
+            <!-- A tag tr é serve para criar a linha na tabela -->
+            <!-- t -> table e r -> row (linha) -->
+            <tr>
+                <!-- A tag th é serve para criar o conteúdo do cabeçalho -->
+                <!-- t -> table e h -> header (cabeçalho) -->
+                <!-- A quantidade de th define a quantidade de colunas que a tabela terá -->
+                <th>Nome do aluno</th>
+                <th>Nota do aluno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- A tag td é serve para criar o conteúdo do corpo da tabela -->
+                <!-- t -> table e d -> data (dados) -->
+                <td>Aluno A</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>Aluno B</td>
+                <td>7.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Média</td>
+                <td>7.5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
