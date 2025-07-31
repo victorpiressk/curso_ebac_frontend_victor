@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 - Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <!-- A tag form serve para criar os formulários no html -->
+    <form>
+        <!-- A tag input é um campo utilizado para preenchimento de informações -->
+        <!-- O atributo type vai definir qual o tipo de preenchimento que esse campo terá -->
+        <!-- O atributo placeholder serve como indicador do tipo de preenchimento está sendo solicitado no input -->
+        <input type="text" placeholder="Digite seu nome">
+        <br>
+
+        <!-- A tag label também serve como indicador do tipo de preenchimento está sendo solicitado no input, porém ficará fora do campo, como um título -->
+        <!-- Para que o label e o input se conectem é necessário adicionar um id no input e o atributo for no label -->
+        <label for="email">Seu e-mail</label>
+        <input type="email" id="email">
+        <br>
+
+        <!-- O tipo tel não muda a forma de preenchimento para apenas números, porém ao acessar em um smartphone, o teclado mudará para um teclado numérico -->
+        <input type="tel" placeholder="Seu telefone">
+        <br>
+
+        <!-- O tipo number muda a estética do input e apenas números poderão ser inseridos -->
+        <!-- É possível adicionar um teto para os valores digitados. Atributo max para definir o teto máximo e o atributo min para definir o teto mínimo -->
+        <!-- O atributo step define de quanto em quanto vai alterar o valor -->
+        <input type="number" placeholder="Digite um valor" max="10" min="2" step="2">
+        <br>
+
+        <!-- O tipo file altera o input para inserir arquivos no formulário -->
+        <input type="file">
+        <br>
+
+        <!-- O tipo color muda o input para uma seleção de cores -->
+        <input type="color">
+        <br>
+
+        <!-- O tipo checkbox cria um input de caixa de seleção -->
+        <input type="checkbox" id="checkbox-termos">
+        <!-- Como não é possível adicionar um placeholder no checkbox, é necessário adicionar um label vinculado ao input checkbox -->
+        <label for="checkbox-termos">Aceito os termos</label>
+        <br>
+
+        <!-- O tipo radio cria caixa de seleção redonda -->
+        <!-- Como não é possível adicionar um placeholder no radio, é necessário adicionar um label vinculado ao input -->
+        <!-- Utilizar atributo name nos inputs para víncula-los, para não causar erro nas seleções -->
+        <input type="radio" name="cor-favorita" id="cor-vermelha">
+        <label for="cor-vermelha">Vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-verde">
+        <label for="cor-verde">Verde</label>
+        <input type="radio" name="cor-favorita" id="cor-azul">
+        <label for="cor-azul">Azul</label>
+        <br>
+
+        <!-- A tag select permite a criação de uma caixa de opções (combobox) -->
+        <select>
+            <!-- A tag option é utilizada para adicionar os itens que a combobox terá -->
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+        </select>
+        <br>
+
+        <!-- O atributo multple permite criar uma a variação da combobox -->
+        <!-- Ao utilizar o ctrl é possível selecionar mais de um item, nessa variação da combobox -->
+        <select multiple>
+            <option>Serie A</option>
+            <option>Serie B</option>
+            <option>Serie C</option>
+        </select>
+        <br>
+
+        <!-- A tag textarea é utilizada como campo de preenchimento de texto -->
+        <textarea></textarea>
+        <br>
+
+        <!-- A tag button cria botoes no formulário -->
+        <!-- O atributo type deve ser utilizado para indicar de qual tipo esse botão será -->
+        <button type="submit">
+            Enviar
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+    </form>
+</body>
+</html>
