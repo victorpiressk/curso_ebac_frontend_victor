@@ -1,0 +1,27 @@
+/* seletor {
+    propriedade: valor;
+} */
+
+/* O seletor * sleciona todos os itens da pagina e irá modiciar tudo que não tenha uma estilização própria */
+* {
+    color: red;
+}
+
+/* Seletor utilizando tag. Irá selecionar todas tags do mesmo tipo */
+h1 {
+    color: green;
+}
+
+h2 {
+    color: green;
+}
+
+/*Seletor utilizando id. Apenas usar id para estilizar itens especificos */
+#economy h2 {
+    color: gold;
+}
+
+/* Seletor por class. Todas as tags que tivem a mesma classe serão modificadas */
+.creation-date {
+    color: #ccc;
+}
