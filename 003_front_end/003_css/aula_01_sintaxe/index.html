@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Sintaxe</title>
+    <!-- Forma 2: Internal -> Cria uma tag style no próprio arquivo HTML, geralmente dentro do head -->
+    <style>
+        body {
+            background-color: #95a5a6;
+        }
+    </style>
+    <!-- Forma 3: External -> Cria um arquivo separado (ex: style.css) e importa no HTML com a tag link dentro do head -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Login Usuário</h1>
+    <!-- Forma 1: Inline -> Adicionar estilo diretamente no atributo style de uma tag HTML -->
+    <label style="color: #34495e;" for="nome">Usuário: </label> <input type="text" id="nome">
+    <br>
+    <label style="color: #34495e;" for="senha">Senha: </label> <input type="password" id="senha">
+    <br>
+    <button class="button-submit" type="submit">Enviar</button>
+    <button class="button-cancel"type="reset">Limpar</button>
+</body>
+</html>

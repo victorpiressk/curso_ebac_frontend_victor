@@ -1,0 +1,12 @@
+h1 {
+    color: #1abc9c;
+    -webkit-text-stroke: 1px #34495e;
+}
+
+.button-submit:hover {
+    background-color: #1abc9c;
+}
+
+.button-cancel:hover {
+    background-color: #e74c3c;
+}
