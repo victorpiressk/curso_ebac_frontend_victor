@@ -7,10 +7,15 @@ $(document).ready(function() {
 
     // Forma Jquery de adicionar evento a um elemento
     $('header button').click(function() {
-        alert('Expandir formulário')
+        $('form').slideDown()
     })
 
-    // Segunda forma de adicionar evento a um elemento (Retirar comportamento de atualizar a página ao submeter o formulário)
+    $('#btn-cancelar').click(function() {
+        $('form').slideUp()
+    })
+
+    // Segunda forma de adicionar evento a um elemento
+    // (Retirar comportamento de atualizar a página ao submeter o formulário)
     $('form').on('submit', function(e) {
         console.log('submit')
         e.preventDefault()
