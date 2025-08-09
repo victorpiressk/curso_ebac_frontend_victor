@@ -15,16 +15,25 @@ html {
     margin: 0 auto;
 }
 
-header {
+header,
+footer {
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
 }
 
-header > .container {
+header > .container,
+footer > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 nav {
@@ -124,7 +133,7 @@ section h2 {
     font-size: 14px;
 }
 
-.lista-veiculos li button {
+button {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -138,6 +147,54 @@ section h2 {
     border-radius: 6px;
 }
 
-.lista-veiculos li button:hover {
+button:hover {
     background-color: #00cec9;
+}
+
+#contato {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('./images/slide3.png');
+
+    background-size: cover;   /* cobre toda a tela */
+    background-position: center; /* centraliza */
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
 }
