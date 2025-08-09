@@ -26,6 +26,9 @@ $(document).ready(function() {
             veiculoInteresse: {
                 required: true
             },
+            valorVeiculo: {
+                required: true
+            },
             mensagem: {
                 required: true
             }
@@ -35,6 +38,7 @@ $(document).ready(function() {
             email: 'Este campo é obrigatório.',
             telefone: 'Este campo é obrigatório.',
             veiculoInteresse: 'Este campo é obrigatório.',
+            valorVeiculo: 'Este campo é obrigatório.',
             mensagem: 'Este campo é obrigatório.'
         },
         submitHandler: function(form) {
@@ -54,5 +58,18 @@ $(document).ready(function() {
         $('#telefone').val('')
         $('#veiculo-interesse').val('')
         $('#mensagem').val('')
-    })    
+    })
+    
+    $('.lista-veiculos button').on('click', function() {
+        const destino = $('#contato')
+        const nomeVeiculo = $(this).parent().find('h3').text()
+        const valorVeiculo = $(this).parent().find('strong').text()
+
+        $('#veiculo-interesse').val(nomeVeiculo)
+        $('#valor-veiculo').val(valorVeiculo)
+
+        $('html').animate({
+            scrollTop: destino.offset().top
+        },1000)
+    })
 })
