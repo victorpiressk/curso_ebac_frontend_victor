@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -18,7 +22,6 @@ header {
 }
 
 header > .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -27,6 +30,7 @@ header > .container {
 nav {
     background-color: #575fcf;
     padding: 16px 0;
+    display: none;
 }
 
 nav li {
@@ -45,6 +49,7 @@ nav li a {
 
 .menu-hamburguer {
     width: 32px;
+    cursor: pointer;
 }
 
 .menu-hamburguer span {
@@ -54,4 +59,85 @@ nav li a {
     display: block;
     margin-bottom: 4px;
     border-radius: 1px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+#em-destaque {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('./images/slide2.png');
+
+    background-size: cover;   /* cobre toda a tela */
+    background-position: center; /* centraliza */
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.lista-veiculos {
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 0 5%;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+.lista-veiculos li img:hover {
+    border: 2px solid #192a56;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.lista-veiculos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #00b894;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lista-veiculos li button:hover {
+    background-color: #00cec9;
 }
