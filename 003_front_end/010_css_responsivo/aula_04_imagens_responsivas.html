@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Forma de adicionar imagens pelo CSS */
+        div {
+            background-image: url(https://cdn.pixabay.com/photo/2018/01/03/19/17/cat-3059075_1280.jpg);
+            height: 1000px;
+            width: 100%;
+            background-repeat: no-repeat;
+
+            /* contain - vai se adequar a altura maxima informada */
+            background-size: contain;
+
+            /* cover - vai aumentar a imagem até largura maxima do container */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Forma de adicionar imagens responsivas pelo HTML -->
+    <picture>
+        <!-- Imagem para smartphones -->
+        <source media="(max-width: 768px)" srcset="https://cdn.pixabay.com/photo/2025/06/02/21/36/cat-9637984_1280.jpg">
+
+        <!-- Imagem para tablets -->
+        <source media="(max-width: 1024px)" srcset="https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_1280.jpg">
+
+        <!-- Imagem para notebook/pc -->
+        <img src="https://cdn.pixabay.com/photo/2018/01/03/19/17/cat-3059075_1280.jpg" alt="">
+    </picture>
+    <div></div>
+</body>
+</html>
