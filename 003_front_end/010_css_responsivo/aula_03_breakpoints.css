@@ -1,0 +1,44 @@
+/* Breakpont é um ponto de quebra definido para mudar o layout ou o estilo de um site quando a largura (ou altura) da tela atinge um valor específico.*/
+
+/* Breackpoint de smartphone */
+@media screen and (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    li {
+        max-width: 100%;
+    }
+}
+
+/* Breackpoint de tablets */
+@media screen and (max-width: 1024px) {
+    li {
+        max-width: 66%;
+    }
+}
+
+/* Breackpoint de notebook/PC */
+@media screen and (min-width: 1025px) {
+    li {
+        display: flex;
+        max-width: 33%;
+    }
+}
+
+/* Tratar a orientação do dispositivo */
+
+/* Modo retrato */
+@media screen and (orientation: portrait) {
+
+}
+
+/* Modo orizontal */
+@media screen and (orientation: landscape) {
+
+}
+
+/* Combinando condições no midea carry */
+@media screen and (orientation: landscape) and (max-width: 640px) {
+
+}
