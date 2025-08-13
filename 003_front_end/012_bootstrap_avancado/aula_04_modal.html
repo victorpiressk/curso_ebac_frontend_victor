@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 -Modal</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-exemplo">
+            Abrir modal
+        </button>
+        <!-- O modal é mais conheciso como pop-up -->
+        <!-- O modal não aparece na tela por padrão, para isso, foi criado um botão para exibição do modal -->
+        <!-- Para incicar a criação de um modal é necessário criar a div com a classe "modal" -->
+        <!-- O atributo data-bs-backdrop="static" serve para retirar o comportamento de fechar a modal ao clicar fora dela -->
+        <div class="modal" id="modal-exemplo" data-bs-backdrop="static">
+            <!-- A classe "modal-dialog" serve como container da modal -->
+            <div class="modal-dialog">
+                <!-- A classe "modal-content" serve para indicar o conteudo da modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Cabeçalho do modal</h5>
+                        <!-- botão com classe "btn close" adicionado para poder fechar o modal -->
+                        <!-- Atributo data-bs-dismiss adicionado para a funcionalidade de fechar o modal acontecer -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto animi, distinctio tempore voluptatem rem id consequuntur pariatur at ut vitae sunt ipsam alias voluptatibus sapiente, dicta iste. Ex, nobis.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <h5>Rodapé do modal</h5>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Enviar</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        // Para que não exista a necessidade de criar um botão para abrir a modal, é possivel adicionar um evento com o JS para abrir a modal automaticamente
+        // Primeiro vai adicionar um evento após a leitura do conteúdo do DOM
+        // Dentro do evento/função deve criar uma constante adicionando a modal
+        // Para exibir a modal deve adicionar o atrubuto/função show
+        // O setTimeout foi utilizado apenas para dar uma lentidão na visibilidade do modal
+        document.addEventListener('DOMContentLoaded', function() {
+            const modalExemplo = new bootstrap.Modal('#modal-exemplo')
+            
+            setTimeout(function() {
+                modalExemplo.show()
+            }, 3000)
+        })
+    </script>
+</body>
+</html>
