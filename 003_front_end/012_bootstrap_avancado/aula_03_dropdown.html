@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 - Dropdown</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Para criar um dropdown primeiro deve criar a div pai com a classe "dropdown" -->
+        <div class="dropdown">
+            <!-- O botão deve conter a classe "dropdown-toggle" -->
+            <!-- Para o menu aparecer deve conter o atributo data-bs-toggle="dropdown" -->
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Cadastrar
+            </button>
+            <!-- A lista precisa receber a classe "dropdpwn-menu" -->
+            <!-- Existe a variação darkmod de estilização do menu adicionando mais uma classe "dropdown-menu-dark" -->
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <!-- Para adicionar o estilo que o bs fornece é necessário adicionar a classe "dropdown-item" -->
+                <li class="dropdown-item">
+                    <a href="#">Novo usuário</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo fornecedor</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo funcionário</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Para criar um botão separado da opção de dropdown deve criar a div pai com a classe "btn-group" assim os botões vão se unir parecendo apenas um botão -->
+        <div class="btn-group">
+            <button class="btn btn-primary">
+                Cadastrar
+            </button>
+            <!-- O botão também deve conter uma 3 classe "dropdown-toggle-split" -->
+            <!-- Para o menu aparecer deve conter o atributo data-bs-toggle="dropdown" -->
+            <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                    <a href="#">Novo usuário</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo fornecedor</a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#">Novo funcionário</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
