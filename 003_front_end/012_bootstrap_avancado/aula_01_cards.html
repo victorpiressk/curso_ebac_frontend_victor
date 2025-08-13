@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Cards</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bootstrap - Cards</h1>
+    <div class="container">
+        <div class="row">
+            <!-- Card padrão -->
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        Cabeçalho do card
+                    </div>
+                    <img src="https://dummyimage.com/180x180" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Título do card</h4>
+                        <h5 class="card-subtitle">Subtítulo do card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, cumque dolor? Laboriosam, eaque quaerat doloribus dignissimos minus at quos excepturi vitae facere ipsam! Omnis molestiae rem error aliquam, ea asperiores?
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                    <div class="card-footer">
+                        Roda-pé do card
+                    </div>
+                </div>
+            </div>
+            <!-- Variação card com darkmod adicionando a classe "text-bg-dark" -->
+            <div class="col-3">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Cabeçalho do card
+                    </div>
+                    <img src="https://dummyimage.com/180x180" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Título do card</h4>
+                        <h5 class="card-subtitle">Subtítulo do card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, cumque dolor? Laboriosam, eaque quaerat doloribus dignissimos minus at quos excepturi vitae facere ipsam! Omnis molestiae rem error aliquam, ea asperiores?
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                    <div class="card-footer">
+                        Roda-pé do card
+                    </div>
+                </div>
+            </div>
+            <!-- Variação card com imagem de fundo alterando para a classe "card-img-overlay" no corpo do card -->
+            <!-- É imteressante retirar o cabeçalho e o roda-pé para não ter sobreposição de informação -->
+            <div class="col-3">
+                <div class="card text-bg-dark">
+                    <img src="https://cdn.pixabay.com/photo/2025/06/02/21/36/cat-9637984_1280.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do card</h4>
+                        <h5 class="card-subtitle">Subtítulo do card</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, cumque dolor? Laboriosam, eaque quaerat doloribus dignissimos minus at quos excepturi vitae facere ipsam! Omnis molestiae rem error aliquam, ea asperiores?
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
