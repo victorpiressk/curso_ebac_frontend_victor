@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <style>
+        #preco p {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Programar ação de exibir informação ao clicar no botão -->
+    <!-- Adição da segunda classe "collapse-horizontal" para que o texto seja exibido orizontalmente ao clicar no botao
+        Adicionado uma largura fixa no paragrafo para corrigir a exibição em varias linhas
+    -->
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#preco">
+        Ver preço
+    </button>
+    <div class="collapse collapse-horizontal" id="preco">
+        <p>
+            3x de R$ 300,00
+        </p>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
