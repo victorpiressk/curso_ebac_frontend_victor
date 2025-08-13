@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - Carousel</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-size: 200% 200%;
+        }
+    </style>
+</head>
+<body>
+    <!-- A div pai precisa conter 2 classe "carousel" e "slide" -->
+    <!-- Também precisa adicionar o atributo data-bs-ride="carousel" para o carrossel funcionar de fato -->
+    <!-- Pode ser adicionada uma 3 classe para uma variação do slide exemplo "carousel-fade" -->
+    <!-- O id serve para que o botão identifique qual elemento deve receber a alteração ao ser clicado -->
+    <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Essa div será o container das imagens -->
+        <div class="carousel-inner">
+            <!-- Precisa adicionar a classe "carousel-item" para que o bootstrap identifique quais são os itens do carrossel -->
+            <!-- A classe "active deve ser atribuida a primeira imagem a ser exibida no carrossel" -->
+            <!-- O atirbuto data-bs-interval serve para adicionar um intervalo de tempo para cada imagem e deve ser atribuido em milisegundos -->
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img src="../009_plugins_jquery/images/slide1.png" alt="">
+                <!-- Para adicionar uma descrição para cada imagem deve utilizar uma div com a classe "carousel-capition" e dentro dela adicionar o texto -->
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="../009_plugins_jquery/images/slide2.png" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="../009_plugins_jquery/images/slide3.png" alt="">
+            </div>
+        </div>
+        <!-- Os botões precisam receber a classes "carousel-control-prev" ou "carousel-control-next" -->
+        <!-- O atributo data-bs-target serve para informar ao botão qual elemento será alterado no clique -->
+        <!-- O atributo data-bs-slide orienta as direções sendo "prev" para voltar e "next" para seguir -->
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" type="button" class="carousel-control-prev">
+            <!-- O span deve receber as classes "carousel-control-prev-icon" ou "carousel-control-next-icon" -->
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" type="button" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <!-- Para criar os indicadores do carrossel criamos a div com a classe "carousel-indicators" -->
+        <div class="carousel-indicators">
+            <!-- Os botões servirão como indicadores e ao clicar seguirá para a imagem de acordo-->
+            <!-- É necessário adicionar o atributo data-bs-target para informar ao botão qual elemento será alterado no clique-->
+            <!-- O atributo data-bs-slide-to serve como array para indicar quais os indices de cada imagem -->
+            <!-- a classe "active" indica qual imagem será a primeira -->
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
