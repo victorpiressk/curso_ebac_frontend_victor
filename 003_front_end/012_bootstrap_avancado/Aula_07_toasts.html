@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 Toasts</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .toast-header {
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bootstrap - Toasts</h1>
+    <!-- Um Toasts são mensagens temporária que aparecem na tela do usuário e parecem com pop-ups -->
+    
+    <button class="btn btn-warning" type="button" id="btn-toast">Abrir toast</button>
+
+    <!-- A primeira div será o container do toast utilizando a classe "toast-container" -->
+    <!-- A classe "position-fixed" indica ao container que independente da rolagem da tela o elemento continuará aparecendo -->
+    <!-- A classe "bottom-0" ou "top-0" indica onde esse elemento ficará fixado na tela verticalmente -->
+    <!-- Por padrão o toast sempre ficará no lado esquerdo da tela, para mudar para o lado direto deve utilizar a classe end-0 -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <!-- A seguinda div será o toast de fato utilizando a classe "toast" -->
+        <!-- O atributo data-bs-autohide="false" serve para alterar comando padrão de fechar o toast automaticamente -->
+        <div class="toast" id="toast-exemplo" data-bs-autohide="false">
+            <!-- O reader será o cabeçalho o toast utilizando a classe "toast-header" -->
+            <header class="toast-header">
+                <strong>Importante</strong>
+                <div>
+                    <button type="button" class="btn btn-close btn-sm" data-bs-dismiss="toast"></button>
+                </div>
+            </header>
+            <!-- Essa div será o corpo do toast utilizando a classe "toast-body" -->
+            <div class="toast-body">
+                Você possui 10 mensagens não lidas.
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <!-- Para chamar o toast é necessário configurar via js -->
+    <!-- Não é possível manubular o toast com data-bs como no modal -->
+    <script>
+        const ativadorToast = document.getElementById('btn-toast')
+        const toastExemplo = document.getElementById('toast-exemplo')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new bootstrap.Toast(toastExemplo)
+                toast.show()
+            })
+        }
+    </script>
+</body>
+</html>
