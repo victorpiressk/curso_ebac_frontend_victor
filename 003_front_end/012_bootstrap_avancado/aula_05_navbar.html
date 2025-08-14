@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 -Navbar</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        /* Correção da cor do texto após aplicar a classe "navbar-nav" na tag nav */
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #ccc;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <!-- A div com classe "navbar" será o container do navbar  -->
+        <!-- A classe aplicará o justifi-content por padrão -->
+        <!-- A classe "navbar-expand-lg" orienta os elementos a ocultar o icone e voltar a apresentar o menu na visão de desktop -->
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Título do site</h1>
+                <!-- Botão com classe "navbar-toggler" serve para telas mobile -->
+                <!-- O atributo "data-bs-toggle="collapse" informa ao botão qual ação deve ser realizada no click -->
+                <!-- O atributo "data-bs-target" servirá para informar ao botão qual elemento sofrerá alteração no click -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <!-- O sapn com a classe "navbar-toggler-icon" da a visibilidade do icone na tela  -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Para que o botão tenha a funcionalidade de abrir e fechar o menu, é necessário adicionar duas classe no nav "collapse" e "navbar-collapse"
+                    Também é necessário adicionar um id para que seja encontrado pelo botão -->
+                <!-- A classe "justify-content-end" aplicada para corrigir alinhamento do menu na visão desktop após a aplicação da classe "navbar-expand-lg" na div pai -->
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <!-- A classe "nav" será o responsavel por retirar os bullets da lista e aplicar o display flex -->
+                    <!-- A classe "nav-pills" será responsavel por adicionar o espaçamento entre os itens, porém,
+                    as tags li e as tags a precisam ter suas classes adicionadas para o bootstrap identificar quais itens aplicar os espaçamento -->
+                    <!-- A classe "navbar-nav" faz o menu ficar na visibilidade de lista -->
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <!-- A classe "active" serve para indicar qual elemento está ativo no momento
+                            Em caso de navegar pelas seções, o elemento respectivo a seção será destacado -->
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- O atributo "data-bs-spy="scroll" orienta o bootstrap a espiar a rolagem da pagina -->
+    <!-- E o atributo "data-bs-target" informa qual item será afetado com a rolagem da pagina -->
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Início</h2>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+        </section>
+        <section id="promocoes">
+            <h2>Promoções</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
