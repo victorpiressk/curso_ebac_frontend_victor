@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - Abas</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+    <h1>Abas - Bootstrap</h1>
+    <div class="container">
+        <h2>Produtos</h2>
+        <div class="container">
+            <!-- Para dar aparencia de abas é necessário adicionar as classes "nav" e "nav-tabs"-->
+            <nav class="nav nav-tabs">
+                <!-- Os botões precisam ter a classe "nav-link" -->
+                <!-- A classe "active" serve pra indicar em qual aba o usuário está -->
+                <!-- O atributo "data-bs-toggle" está indicando o botão qual sua funcionalidade -->
+                <!-- O atributo "data-bs-target" está infomarndo ao botão qual item deve sofre a alteração -->
+                <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Eletrônicos</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda Masculida</button>
+                <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda Feminina</button>
+            </nav>
+            <!-- Essa div com a classe "tab-content" indica que será esse o campo onde cotem os conteúdos de cada aba -->
+            <div class="tab-content">
+                <!-- A classe "tab-pane" indica que esse é o conteúdo da aba -->
+                <div id="aba1" class="tab-pane active">
+                    Conteúdo da aba Eletrônicos
+                </div>
+                <div id="aba2" class="tab-pane">
+                    Conteúdo da aba Moda Masculida
+                </div>
+                <div id="aba3" class="tab-pane">
+                    Conteúdo da aba Moda Feminina
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
