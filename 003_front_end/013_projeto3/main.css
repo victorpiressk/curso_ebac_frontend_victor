@@ -61,3 +61,17 @@ body {
 form textarea {
     resize: none;
 }
+
+@media screen and (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    #sobre h2 {
+        margin-top: 18px;
+    }
+
+    #contato button {
+        margin-bottom: 46px;
+    }
+}
