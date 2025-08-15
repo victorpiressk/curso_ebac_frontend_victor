@@ -29,7 +29,8 @@ body {
     font-family: "Pacifico", cursive;
 }
 
-.section-title span {
+.section-title span,
+.text-colored {
     color: #e15f41;
 }
 
