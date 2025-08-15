@@ -43,8 +43,21 @@ body {
     color: #e15f41;
 }
 
-#cardapio .nav-link.active {
+#cardapio .nav-link.active,
+#contato button {
     background-color: #e15f41;
     color: #fff;
 }
 
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+form textarea {
+    resize: none;
+}
