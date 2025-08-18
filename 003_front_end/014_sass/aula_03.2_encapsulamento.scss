@@ -1,0 +1,41 @@
+$corPrincipal: #eee;
+$corSecundaria: #111;
+$corHoverButton: #333;
+
+body {
+    background-color: $corPrincipal;
+}
+
+// Estrutura de encapsulamento
+
+header {
+    background-color: $corPrincipal;
+
+    h1 {
+        color: $corSecundaria;
+    }
+}
+
+form {
+    button {
+        padding: 16px;
+        background-color: $corSecundaria;
+        color: $corPrincipal;
+
+        // Utilizamos o & para referenciar o mesmo seletor e funciona para classes e subseletores
+
+        &.success {
+            background-color: green;
+        }
+
+        &.fail {
+            background-color: red;
+        }
+        
+        // (button:hover = &:hover)
+
+        &:hover {
+            background-color: $corHoverButton;
+        }
+    }
+}
