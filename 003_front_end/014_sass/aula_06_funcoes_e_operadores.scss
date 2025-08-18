@@ -1,0 +1,48 @@
+// Funções no Sass
+
+// São como funções em linguagens de programação: recebem valores, processam e retornam algo.
+// No Sass, você pode usar funções nativas (já prontas) ou criar as suas próprias com @function.
+
+// Exemplos de funções nativas:
+
+div {
+  background-color: lighten($cor, 20%); // deixa a cor mais clara
+  border: 2px solid darken($cor, 10%); // deixa a cor mais escura
+  color: mix(white, $cor, 50%); // mistura duas cores
+  width: round(10.6px); // arredonda número
+}
+
+// O Sass tem funções para cores, números, strings, listas e mapas.
+
+// Criando sua própria função:
+
+@function calcular-rem($px) {
+  @return $px / 16 * 1rem;
+}
+
+h1 {
+  font-size: calcular-rem(32); // converte 32px para rem
+}
+
+// Operadores no Sass
+
+// Com operadores, você consegue fazer cálculos diretamente no CSS.
+
+$base: 10px;
+
+.box {
+  width: $base * 5;   // 50px
+  height: $base + 20; // 30px
+  margin: (100px / 2); // 50px
+}
+
+// Operadores disponíveis:
+
+// Matemáticos: +, -, *, /, %
+// Comparação: ==, !=, >, <, >=, <=
+// Lógicos: and, or, not
+
+// Resumindo
+
+// Funções no Sass → permitem processar valores (usar funções nativas como lighten, darken, round ou criar suas próprias).
+// Operadores no Sass → permitem fazer cálculos e comparações direto dentro do CSS.
