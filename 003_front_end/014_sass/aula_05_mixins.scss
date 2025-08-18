@@ -1,0 +1,55 @@
+// No Sass, um mixin é como uma função para CSS
+// Ele permite reutilizar blocos de código em diferentes lugares, sem precisar repetir tudo manualmente.
+
+// Você define um @mixin com um nome e, opcionalmente, parâmetros.
+
+@mixin centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Depois, você chama esse mixin com @include onde quiser.
+
+.container {
+    @include centralizar;
+    height: 100vh;
+}
+
+// Isso gera no CSS:
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+// Resumindo: Um mixin no Sass é um recurso para reaproveitar código CSS, evitar repetição e deixar seu código mais organizado, flexível e fácil de manter.
+
+// Mixin com parâmetros:
+
+@mixin borda-redonda($raio, $cor) {
+    border-radius: $raio;
+    border: 2px solid $cor;
+}
+
+.card {
+    @include borda-redonda(10px, blue);
+}
+
+.botao {
+    @include borda-redonda(50%, red);
+}
+
+// Gera no CSS:
+
+.card {
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.botao {
+    border-radius: 50%;
+    border: 2px solid red;
+}
