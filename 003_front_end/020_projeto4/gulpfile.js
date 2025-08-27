@@ -2,6 +2,7 @@ import gulp from "gulp";
 import gulpSass from "gulp-sass";
 import * as dartSass from "sass";
 import htmlmin from "gulp-htmlmin";
+import uglify from "gulp-uglify";
 
 const sass = gulpSass(dartSass); // cria a instância correta do gulp-sass
 
@@ -23,12 +24,19 @@ function minifyHTML() {
     .pipe(gulp.dest("./dist")); // envia para pasta dist
 }
 
+function minificaJavaScript() {
+    return gulp.src('./src/scripts/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/scripts'))
+}
+
 function watch() {
     gulp.watch('./src/styles/*.scss',{ignoreInitial: false}, gulp.series(compilaSass))
     gulp.watch('./src/*.html',{ignoreInitial: false}, gulp.series(minifyHTML))
+    gulp.watch('./src/scripts/*.js',{ignoreInitial: false}, gulp.series(minificaJavaScript))
 }
 
-const build = gulp.parallel(compilaSass, minifyHTML)
+const build = gulp.parallel(compilaSass, minifyHTML, minificaJavaScript)
 
 export default build
 export {watch}
