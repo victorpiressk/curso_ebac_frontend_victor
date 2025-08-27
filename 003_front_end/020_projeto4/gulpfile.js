@@ -6,7 +6,7 @@ import htmlmin from "gulp-htmlmin";
 const sass = gulpSass(dartSass); // cria a instância correta do gulp-sass
 
 function compilaSass() {
-    return gulp.src('./src/styles/*.scss') // gulp.src busca os arquivos fonte
+    return gulp.src('./src/styles/main.scss') // gulp.src busca os arquivos fonte
         // .pipe() é o que permite encadear tarefas dentro de um fluxo
         .pipe(sass({
             style: 'compressed'
@@ -28,4 +28,7 @@ function watch() {
     gulp.watch('./src/*.html',{ignoreInitial: false}, gulp.series(minifyHTML))
 }
 
-export {compilaSass, minifyHTML, watch}
+const build = gulp.parallel(compilaSass, minifyHTML)
+
+export default build
+export {watch}
