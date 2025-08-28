@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./images/disneyplus.svg" alt="Disney">
+            </h1>
+
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./images/disneyplus.svg" alt="Disney">
-            </h1>
+            </div>
+
             <h2 class="title">
                 As melhores histórias dem um só lugar.
             </h2>
+
             <p>
                 <a class="text--link" href="#">
                     Assinar o Disney+
@@ -24,6 +44,7 @@
                     R$ 27,90/mês ou R$ 279,90/ano à vista*
                 </span>
             </p>
+
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
@@ -36,11 +57,13 @@
                     <span class="text">R$ 55,90/mês*</span>
                 </li>
             </ul>
+
             <p class="text--small">
                 *O preço pode variar caso a assinatura seja feita através de outras plataformas.
             </p>
         </div>
     </section>
+
     <section class="shows">
         <nav class="shows__tabs">
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
@@ -53,6 +76,7 @@
                 Mais no Star+
             </button>
         </nav>
+
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
                 <img src="./images/em_breve/desencantada.jpg" alt="spidey">
@@ -73,6 +97,7 @@
                 <img src="./images/em_breve/willow.jpg" alt="spidey">
             </li>
         </ul>
+
         <ul data-tab-id="mais_populares" class="shows__list">
             <li class="shows__list__item">
                 <img src="./images/mais_populares/bluey.jpg" alt="spidey">
@@ -93,6 +118,7 @@
                 <img src="./images/mais_populares/tudo_igual_sqn.jpg" alt="spidey">
             </li>
         </ul>
+
         <ul data-tab-id="mais_star" class="shows__list">
             <li class="shows__list__item">
                 <img src="./images/mais_no_star_plus/belair.jpg" alt="spidey">
@@ -114,9 +140,11 @@
             </li>
         </ul>
     </section>
+
     <section class="plans">
         <h2 class="title--big">Escolha seu plano</h2>
         <ul class="plans__list">
+
             <li class="plans__list__item">
                 <img src="./images/logos/disneyplus_underline.png" alt="">
                 <strong class="title">R$ 27,90/mês*</strong>
@@ -125,6 +153,7 @@
                 </p>
                 <button class="button">Assine agora</button>
             </li>
+
             <li class="plans__list__item">
                 <img src="./images/logos/disney_star_plus_sm.png" alt="">
                 <strong class="title">R$ 45,90/mês*</strong>
@@ -133,14 +162,16 @@
                 </p>
                 <button class="button">Assine agora</button>
             </li>
+
             <li class="plans__list__item">
                 <img src="./images/logos/disney_star_plus_starzplay_underline.png" alt="">
                 <strong class="title">R$ 55,90/mês*</strong>
                 <p class="text--big">
-                    Assine Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
+                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
                 </p>
                 <button class="button">Assine agora</button>
             </li>
+
         </ul>
         <p class="text--small">
                 *O preço pode variar caso a assinatura seja feita através de outras plataformas.
@@ -219,6 +250,7 @@
     <section class="faq">
         <h2 class="title--big">Perguntas Ferquentes</h2>
         <ul class="faq__questions">
+
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
                     Pergunta?
@@ -227,6 +259,7 @@
                     Resposta da pergunta
                 </div>
             </li>
+
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
                     Pergunta?
@@ -235,6 +268,7 @@
                     Resposta da pergunta
                 </div>
             </li>
+
             <li class="faq__questions__item">
                 <div class="faq__questions__item__question" data-faq-question>
                     Pergunta?
@@ -243,6 +277,7 @@
                     Resposta da pergunta
                 </div>
             </li>
+
         </ul>
     </section>
 
@@ -250,6 +285,7 @@
         <div class="footer__container">
             <img class="footer__logo" src="./images/disneyplus.svg" alt="">
             <ul class="footer__links">
+
                 <li class="footer__links__item">
                     <div class="lenguage-selector">
                         <img src="./images/icones/globe.svg" alt="">
@@ -259,6 +295,7 @@
                         </select>
                     </div>
                 </li>
+
                 <li class="footer__links__item">
                     <a class="text--small" href="#">Termos e Condições de Uso</a>
                 </li>
@@ -281,12 +318,15 @@
                     <a class="text--small" href="#">Sobre o Disney+</a>
                 </li>
             </ul>
+
             <p class="text--small">
                 &#169; 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
             </p>
+
             <p class="text--small">
                 Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda, World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559. Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
             </p>
+
         </div>
     </footer>
 

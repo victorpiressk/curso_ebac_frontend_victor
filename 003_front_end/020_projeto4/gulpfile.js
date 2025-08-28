@@ -11,7 +11,7 @@ function compilaSass() {
         // .pipe() é o que permite encadear tarefas dentro de um fluxo
         .pipe(sass({
             style: 'compressed'
-        })) // sass() executa a compilação do sass (precisa ser uma função sem parametro, por isso a criação da instancia acima)
+        }).on("error", sass.logError)) // sass() executa a compilação do sass (precisa ser uma função sem parametro, por isso a criação da instancia acima)
         .pipe(gulp.dest('./dist/styles')) // gulp.dest() indica onde os arquivos compilados serão depositados
 }
 
