@@ -38,7 +38,11 @@ meu-projeto/
 
 ### 5. Executar build de desenvolvimanto:
 1. Acessar a pasta do projeto pelo terminal.
-2. Executar comando de build: ``npm run dev``
+2. Executar comando de build em dev: ``npm run dev``
+3. O build dev irá criar duas pastas automaticamente: ``.parcel-cache`` e ``dist`` 
+4. Criar arquivo: `.gitignore` e adicionar os nomes as pastas: `node_modules`, ``.parcel-cache`` e ``dist``
+
+**OBS:** Os nomes das pastas listados no arquivo .gitignore indicam quais diretórios devem ser ignorados pelo Git, evitando que sejam versionados no repositório.
 
 ## Possível erro de build
 ### Descrição do erro:
