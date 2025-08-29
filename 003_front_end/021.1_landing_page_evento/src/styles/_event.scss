@@ -1,0 +1,62 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+
+    &--front_end {
+        background-image: linear-gradient(variables.$gradientColor1, variables.$gradientColor2);
+    }
+    &--ui_ux {
+        background-image: linear-gradient(variables.$gradientColor2, variables.$gradientColor3);
+    }
+    &--data_science {
+        background-image: linear-gradient(variables.$gradientColor3, variables.$gradientColor4);
+    }
+    &--back_end {
+        background-image: linear-gradient(variables.$gradientColor4, variables.$gradientColor3);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__details {
+        
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    &__image {
+        max-width: 360px;
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+
+        &__image {
+            max-width: 100%;
+        }
+    }
+}
