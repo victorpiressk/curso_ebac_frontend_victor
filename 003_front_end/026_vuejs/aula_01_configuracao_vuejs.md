@@ -75,3 +75,27 @@ cd nome-do-projeto
 npm install
 npm run dev
 ```
+
+## Configuração VueJS
+### Baixar extenção do Vue no VS
+Por padrão, o VS não reconhece a linguagem do Vue, para isso é necessário baixar a instenção. Caso já tenha baixado, não é necessário seguir o passo a passo abaixo.
+1. Acessar a aba de extenções do VS
+2. Pesquisar por Vue
+3. Instalar a extenção Vue (Official) - vuejs.org
+
+### Limpar template inicial do Vue
+1. Abrir pasta ``src``
+2. Deletar as pastas ``assets`` e ``components`` (Terá que permitir que o windows realize a ação)
+3. No deletar as referencias do ``App.vue`` (apagar os conteúdos e deixar apenas as tags de criação) Ex:
+```
+<script setup>
+</script>
+
+<template>
+  <h1>teste</h1>
+</template>
+
+<style scoped>
+</style>
+```
+4. Dentro do main.js deve remover arquivo de referencia do CSS ``import './assets/main.css'``
