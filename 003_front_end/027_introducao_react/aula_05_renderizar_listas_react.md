@@ -62,6 +62,6 @@ Podemos aplicar condições diretamente no .map(). Exemplo: mostrar só usuário
 ```
 
 ## Resumindo
-Usamos ``.map()`` para transformar arrays em elementos JSX.
-Sempre adicionar a propriedade ``key`` para cada item.
-Podemos combinar ``.map()``, ``.filter()`` e outras funções de array para manipular os dados antes da renderização.
+- Usamos ``.map()`` para transformar arrays em elementos JSX.
+- Sempre adicionar a propriedade ``key`` para cada item.
+- Podemos combinar ``.map()``, ``.filter()`` e outras funções de array para manipular os dados antes da renderização.
