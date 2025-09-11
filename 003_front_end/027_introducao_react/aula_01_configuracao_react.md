@@ -24,6 +24,7 @@ meu-projeto/
 │── package.json    → dependências e scripts
 │── vite.config.js  → configuração do Vite
 ```
+Por padrão, o react cria os arquivos de CSS com estilização. Esses arquivos devem se deletados.
 
 ## Arquivo ``main.jsx``
 Esse é o ponto de entrada da aplicação, onde o React é montado na DOM:
