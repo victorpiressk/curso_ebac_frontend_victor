@@ -1,0 +1,51 @@
+button {
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--corSecundaria);
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto 16px;
+}
+
+button:hover {
+    border-color: var(--corBotaoHover);
+}
+
+.container {
+    background-color: var(--corDeFundo);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.listItem {
+    padding: 16px;
+    border: 2px solid var(--corPrincipal);
+    border-radius: 4px;
+}
+
+.itemName b, .itemLanguage b {
+    margin-right: 8px;
+}
+
+.itemLink {
+    display: block;
+    background-color: var(--corSecundaria);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.itemLink:hover {
+    border-color: var(--corBotaoHover);
+}

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+    color: #fff;
+    background-color: #34495e;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+:root {
+    --corPrincipal: #2c3e50;
+    --corSecundaria: #8e44ad;
+    --corBotaoHover: #3498db;
+    --corDeFundo: #34495e;
+}

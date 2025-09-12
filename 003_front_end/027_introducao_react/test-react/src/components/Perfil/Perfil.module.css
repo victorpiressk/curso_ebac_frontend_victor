@@ -1,0 +1,31 @@
+input {
+    display: flex;
+    padding: 8px;
+    margin: 16px auto;
+    border: none;
+    /* border-bottom: 2px solid #000; */
+    text-align: center;
+    background-color: var(--corPrincipal);
+    border-radius: 4px;
+}
+
+.header {
+    background-color: var(--corPrincipal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0 40px;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid var(--corSecundaria);
+    margin-bottom: 8px;
+}
+
+.name {
+    font-size: 18px;
+}
