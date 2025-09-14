@@ -6,14 +6,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   body {
     padding-top: 80px;
-    background-color: #f5f5f5;
-    color: #333;
-  }
 
   a {
     text-decoration: none;
