@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    list-style: none;
   }
 
   body {
@@ -15,11 +16,6 @@ const GlobalStyle = createGlobalStyle`
     @media (max-width: 768px) {
       padding-top: 16px;
     }
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
   }
 `
 
