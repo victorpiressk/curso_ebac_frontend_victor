@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import { Theme } from './themes/dark'
 
 const GlobalStyle = createGlobalStyle`
   /* Reset CSS básico */
@@ -12,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     padding: 80px 0;
+    background-color: ${(props) => (props.theme as Theme).corDeFundo};
 
     @media (max-width: 768px) {
       padding-top: 16px;
